@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h2>Patients Registration Form</h2>
+    <form action="/" method="post">
+        <label for="telephone">Telephone:</label>
+        <input type="tel" name="telephone" required>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" required>
+
+        <label for="id_number">ID Number:</label>
+        <input type="text" name="id_number" required>
+
+        <label for="address">Address:</label>
+        <input type="text" name="address" required>
+
+        <label for="county">County:</label>
+        <input type="text" name="county" required>
+
+        <label for="sub_county">Sub County:</label>
+        <input type="text" name="sub_county" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required>
+
+        <label for="gender">Gender:</label>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="marital_status">Marital Status:</label>
+        <select name="marital_status" required>
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="divorced">Divorced</option>
+            <option value="widowed">Widowed</option>
+        </select>
+
+        <h3>Next of Kin</h3>
+
+        <label for="kin_name">Name:</label>
+        <input type="text" name="kin_name" required>
+
+        <label for="kin_dob">Date of Birth:</label>
+        <input type="date" name="kin_dob" required>
+
+        <label for="kin_id_number">ID Number:</label>
+        <input type="text" name="kin_id_number" required>
+
+        <label for="kin_gender">Gender:</label>
+        <select name="kin_gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="kin_relationship">Relationship:</label>
+        <input type="text" name="kin_relationship" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
